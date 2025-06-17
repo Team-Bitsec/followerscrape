@@ -3,28 +3,32 @@
 
 import { useState } from "react";
 
+
+
+
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <nav className="bg-white shadow-md sticky top-0 z-50 text-[18px]">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center cursor-pointer">
         {/* Left: Logo */}
         <div className="text-xl font-bold">
        <img src="/images/logo/logo-png.png" alt="followerscraper" width="170px" height="150px"/>
         </div>
              
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-blue-600">Home</a>
-          <a href="#pricing" className="hover:text-blue-600">Pricing</a>
-          <a href="#contact" className="hover:text-blue-600">Contact</a>
+        <div className="hidden md:flex space-x-6 ">
+          <a href="#home" className="hover:text-orange-300">Home</a>
+          <a href="#pricing" className="hover:text-orange-300">Pricing</a>
+          <a href="#contact" className="hover:text-orange-300">Contact</a>
         </div>
 
         {/* Right side: Auth Buttons */}
-        <div className="hidden md:flex space-x-3">
-          <button className="px-4 py-1 border rounded-md hover:bg-gray-100">Signin</button>
-          <button className="px-4 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700">Signup</button>
+        <div className="hidden md:flex space-x-3 font-bold ">
+          <button className="px-4 py-1 border rounded-md hover:bg-gray-100 cursor-pointer">Signin</button>
+          <button className="px-4 py-2 bg-black text-white rounded-md hover:bg-orange-300 hover:text-black cursor-pointer">Signup</button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -43,11 +47,11 @@ export default function Header() {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 text-center">
-          <a href="#home" className="block hover:text-blue-600">Home</a>
-          <a href="#pricing" className="block hover:text-blue-600">Pricing</a>
-          <a href="#contact" className="block hover:text-blue-600">Contact</a>
+        <a href="#home" className="block hover:text-orange-300">Home</a>
+          <a href="#pricing" className="block hover:text-orange-300">Pricing</a>
+          <a href="#contact" className="block hover:text-orange-300">Contact</a>
           <button className="w-full mt-2 py-1 border rounded-md">Signin</button>
-          <button className="w-full py-1 bg-blue-600 text-white rounded-md">Signup</button>
+          <button className="w-full py-1 bg-black text-white rounded-md">Signup</button>
         </div>
       )}
     </nav>
