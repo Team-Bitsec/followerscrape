@@ -1,0 +1,55 @@
+// components/Navbar.jsx
+"use client";
+
+import { useState } from "react";
+
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        {/* Left: Logo */}
+        <div className="text-xl font-bold">
+       <img src="/images/logo/logo-png.png" alt="followerscraper" width="170px" height="150px"/>
+        </div>
+             
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-6">
+          <a href="#home" className="hover:text-blue-600">Home</a>
+          <a href="#pricing" className="hover:text-blue-600">Pricing</a>
+          <a href="#contact" className="hover:text-blue-600">Contact</a>
+        </div>
+
+        {/* Right side: Auth Buttons */}
+        <div className="hidden md:flex space-x-3">
+          <button className="px-4 py-1 border rounded-md hover:bg-gray-100">Signin</button>
+          <button className="px-4 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700">Signup</button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round"
+                strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}>
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isOpen && (
+        <div className="md:hidden px-4 pb-4 space-y-2 text-center">
+          <a href="#home" className="block hover:text-blue-600">Home</a>
+          <a href="#pricing" className="block hover:text-blue-600">Pricing</a>
+          <a href="#contact" className="block hover:text-blue-600">Contact</a>
+          <button className="w-full mt-2 py-1 border rounded-md">Signin</button>
+          <button className="w-full py-1 bg-blue-600 text-white rounded-md">Signup</button>
+        </div>
+      )}
+    </nav>
+  );
+}
