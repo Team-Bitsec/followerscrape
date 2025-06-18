@@ -20,7 +20,7 @@ export default function Header() {
              
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 ">
-          <Link href="/home" className="hover:text-orange-300">Home</Link>
+          <Link href="/" className="hover:text-orange-300">Home</Link>
           <Link href="/pricing" className="hover:text-orange-300">Pricing</Link>
           <Link href="/contact" className="hover:text-orange-300">Contact</Link>
         </div>
