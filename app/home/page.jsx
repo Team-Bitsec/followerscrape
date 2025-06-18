@@ -1,8 +1,14 @@
 import React from 'react'
+import HeroSection from '../components/hero/HeroSection'
 
 function page() {
   return (
-    <div>page</div>
+    <div className='bg-black text-white'
+  >page
+
+<HeroSection />
+
+</div>
   )
 }
 

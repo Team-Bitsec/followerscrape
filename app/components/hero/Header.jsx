@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-
+import Link from "next/link";
 
 
 
@@ -20,15 +20,17 @@ export default function Header() {
              
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 ">
-          <a href="#home" className="hover:text-orange-300">Home</a>
-          <a href="#pricing" className="hover:text-orange-300">Pricing</a>
-          <a href="#contact" className="hover:text-orange-300">Contact</a>
+          <Link href="/home" className="hover:text-orange-300">Home</Link>
+          <Link href="/pricing" className="hover:text-orange-300">Pricing</Link>
+          <Link href="/contact" className="hover:text-orange-300">Contact</Link>
         </div>
 
         {/* Right side: Auth Buttons */}
         <div className="hidden md:flex space-x-3 font-bold ">
-          <button className="px-4 py-1 border rounded-md hover:bg-gray-100 cursor-pointer">Signin</button>
-          <button className="px-4 py-2 bg-black text-white rounded-md hover:bg-orange-300 hover:text-black cursor-pointer">Signup</button>
+        <Link href="/signIn" ><button className="px-4 py-1 border rounded-md hover:bg-gray-100 cursor-pointer">Signin</button></Link>
+
+        
+         <Link href="/signUp"><button className="px-4 py-2 bg-black text-white rounded-md hover:bg-orange-300 hover:text-black cursor-pointer">Signup</button></Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -47,9 +49,9 @@ export default function Header() {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 text-center">
-        <a href="#home" className="block hover:text-orange-300">Home</a>
-          <a href="#pricing" className="block hover:text-orange-300">Pricing</a>
-          <a href="#contact" className="block hover:text-orange-300">Contact</a>
+        <Link href="/home" className="block hover:text-orange-300">Home</Link>
+          <Link href="/pricing" className="block hover:text-orange-300">Pricing</Link>
+          <Link href="/contact" className="block hover:text-orange-300">Contact</Link>
           <button className="w-full mt-2 py-1 border rounded-md">Signin</button>
           <button className="w-full py-1 bg-black text-white rounded-md">Signup</button>
         </div>
