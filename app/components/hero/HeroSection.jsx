@@ -72,27 +72,27 @@ function HeroSection() {
           {/* Step 1 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
-            <h4 className="font-bold mb-2 text-2xl">Estimate Your Rate</h4>
+            <h4 className="font-bold mb-2 text-2xl">Select a package that suits your needs.</h4>
             <p className="text-gray-600">
-              Tell us what you need to insure, how much it’s worth, and where you live and estimate your rate.
-            </p>
+           Choose from a variety of flexible plans designed to meet your specific goals
+</p>
           </div>
 
           {/* Step 2 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
-            <h4 className="font-bold mb-2 text-2xl">Apply For Coverage</h4>
+            <h4 className="font-bold mb-2 text-2xl">Complete the payment</h4>
             <p className="text-gray-600">
-              Tell us a bit more about yourself and your jewelry. Coverage usually starts immediately.
+Proceed with our secure and hassle-free payment process to confirm your order
             </p>
           </div>
 
           {/* Step 3 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
-            <h4 className="font-bold mb-2 text-2xl">Wear Your Jewelry, Worry Free</h4>
+            <h4 className="font-bold mb-2 text-2xl">Enter your username or profile link.</h4>
             <p className="text-gray-600">
-              Your jewelry is protected. If anything happens, we’ll help you repair or replace it.
+              Simply provide your social media username or profile link so we know where to deliver the service
             </p>
           </div>
        </div>

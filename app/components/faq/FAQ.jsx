@@ -9,19 +9,26 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: 'How does the subscription work?',
+      question: 'Are the followers real? ',
       answer:
-        'You choose a plan that fits your needs and can cancel or change it anytime from your account settings.',
+        'Yes! We provide real & active followers who engage with your content.',
     },
     {
-      question: 'Can I upgrade my plan later?',
+      question: 'How fast will I receive my order??',
       answer:
-        'Yes, you can upgrade or downgrade your plan at any time from your dashboard.',
+        'Most orders start processing within minutes and complete within 24 hours.',
     },
     {
-      question: 'What payment methods are accepted?',
+      question: 'Is this safe for my account?',
       answer:
-        'We accept all major credit cards, PayPal, and Stripe payments.',
+        'Yes, our methods are completely safe and comply with social media guidelines.',
+    },
+
+
+  {
+      question: 'What if I don’t receive my order?',
+      answer:
+        'Contact our support team, and we’ll resolve it ASAP.',
     },
 
 
@@ -32,17 +39,6 @@ export default function FAQSection() {
     },
 
 
-  {
-      question: 'What payment methods are accepted?',
-      answer:
-        'We accept all major credit cards, PayPal, and Stripe payments.',
-    },
-
-  {
-      question: 'What payment methods are accepted?',
-      answer:
-        'We accept all major credit cards, PayPal, and Stripe payments.',
-    },
 
 
 

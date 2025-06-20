@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Pricing from '../components/pricing/Pricing'
+import Extra from '../components/hero/Extra'
 
 function page() {
   return (
     <div>
 
-<Pricing />
+<Extra />
 
     </div>
   )
