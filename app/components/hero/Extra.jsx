@@ -1,156 +1,76 @@
-"use client";
-import { useState } from "react";
+'use client';
+import { H1, H6 } from './../ui/Typhography';
 
-const pricingData = {
-  monthly: [
-    {
-      title: "Free",
-      price: "$0",
-      note: "$5 to spend in Apify Store or on your own Actors",
-      features: [
-        "$0.4 per compute unit",
-        "Community support",
-        "No Apify Store discount ❌",
-      ],
-      button: "Start for free",
-    },
-    {
-      title: "Starter",
-      price: "$39",
-      note: "$39 to spend in Apify Store or on your own Actors",
-      features: [
-        "$0.4 per compute unit",
-        "Chat support",
-        "Bronze Apify Store discount 🥉",
-      ],
-      button: "Choose plan",
-    },
-    {
-      title: "Scale",
-      price: "$199",
-      note: "$199 to spend in Apify Store or on your own Actors",
-      features: [
-        "$0.3 per compute unit",
-        "Priority chat support",
-        "Silver Apify Store discount 🥈",
-      ],
-      button: "Choose plan",
-    },
-    {
-      title: "Business",
-      price: "$999",
-      note: "$999 to spend in Apify Store or on your own Actors",
-      features: [
-        "$0.25 per compute unit",
-        "Account manager",
-        "Gold Apify Store discount 🥇",
-      ],
-      button: "Choose plan",
-    },
-  ],
-  yearly: [
-    {
-      title: "Free (Yearly)",
-      price: "$0",
-      note: "$60 value yearly plan",
-      features: [
-        "$0.35 per compute unit",
-        "Community support",
-        "No Apify Store discount ❌",
-      ],
-      button: "Start yearly",
-    },
-    {
-      title: "Starter (Yearly)",
-      price: "$350",
-      note: "$350 yearly value",
-      features: [
-        "$0.35 per compute unit",
-        "Chat support",
-        "Bronze Apify Store discount 🥉",
-      ],
-      button: "Choose yearly",
-    },
-    {
-      title: "Scale (Yearly)",
-      price: "$1799",
-      note: "$1799 yearly value",
-      features: [
-        "$0.28 per compute unit",
-        "Priority chat support",
-        "Silver Apify Store discount 🥈",
-      ],
-      button: "Choose yearly",
-    },
-    {
-      title: "Business (Yearly)",
-      price: "$8999",
-      note: "$8999 yearly value",
-      features: [
-        "$0.20 per compute unit",
-        "Dedicated manager",
-        "Gold Apify Store discount 🥇",
-      ],
-      button: "Choose yearly",
-    },
-  ],
-};
+const plans = [
+  {
+    name: 'Starter',
+    price: '$30',
+    credits: '10,000 followers or 1,000 emails',
+    costPer: '$0.035 per credit',
+    features: [
+      'Pay only for valid emails',
+      'Credits never expire',
+      'Access to all key features',
+    ],
+    color: 'border-gray-300',
+  },
+  {
+    name: 'Pro',
+    price: '$250',
+    credits: '100,000 followers or 10,000 emails',
+    costPer: '$0.03 per credit',
+    features: [
+      'Same as Starter Plan',
+      'Lower cost per credit',
+    ],
+    color: 'border-gray-300',
+  },
+  {
+    name: 'Enterprise',
+    price: '$2,000',
+    credits: '1,000,000 followers or 100,000 emails',
+    costPer: '$0.02 per credit',
+    features: [
+      'Ideal for large-scale operations',
+      'Lowest cost per credit',
+    ],
+    color: 'border-gray-300',
+  },
+];
 
-export default function Extra() {
-  const [billing, setBilling] = useState("monthly");
-
+export default function Pricing() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold">Flexible plan + pay as you go</h2>
-        <div className="inline-flex mt-4 border rounded-full overflow-hidden">
-          <button
-            onClick={() => setBilling("monthly")}
-            className={`px-4 py-2 text-sm ${
-              billing === "monthly"
-                ? "bg-black text-white"
-                : "bg-white text-black hover:bg-gray-100"
-            }`}
-          >
-            Bill monthly
-          </button>
-          <button
-            onClick={() => setBilling("yearly")}
-            className={`px-4 py-2 text-sm ${
-              billing === "yearly"
-                ? "bg-black text-white"
-                : "bg-white text-black hover:bg-gray-100"
-            }`}
-          >
-            Bill yearly <span className="text-green-600 ml-1">-10%</span>
-          </button>
-        </div>
-      </div>
+    <section className="bg-gray-100 py-16 px-4">
+      <div className="max-w-7xl mx-auto text-center pt-12 pb-12">
+       
 
-      <div className="container mx-auto px-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {pricingData[billing].map((plan, i) => (
-          <div
-            key={i}
-            className="bg-white border rounded-xl shadow-sm p-6 flex flex-col justify-between"
-          >
-            <div>
-              <h3 className="text-lg font-semibold mb-1">{plan.title}</h3>
-              <p className="text-3xl font-bold mb-2">{plan.price}</p>
-              <p className="text-sm text-gray-600 mb-4">{plan.note}</p>
-              <ul className="mb-4 space-y-2 text-sm text-left">
-                {plan.features.map((f, j) => (
-                  <li key={j} className="flex items-start">
-                    <span className="text-green-600 mr-2">✔</span>
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
+        <H1>Choose Your Plan</H1>
+      
+        <H6> Find the perfect package for your growth. No hidden fees, no fake engagement – only real results!</H6>
+        <div className="grid gap-6 md:grid-cols-3 mt-14 ">
+          {plans.map((plan) => (
+            <div
+              key={plan.name}
+              className={`bg-white pb-14 shadow-md rounded-lg p-6 border-t-4 ${plan.color} flex flex-col justify-between`}
+            >
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{plan.name} Plan</h3>
+                <p className="text-3xl font-bold text-gray-900">{plan.price}</p>
+                <p className="text-sm text-gray-500 mt-1 mb-3">{plan.credits}</p>
+                <p className="text-sm font-medium text-black mb-4">{plan.costPer}</p>
+
+                <ul className="text-sm text-gray-700 space-y-2 mb-6 text-left">
+                  {plan.features.map((feature, index) => (
+                    <li key={index}>✔ {feature}</li>
+                  ))}
+                </ul>
+              </div>
+              <button className="mt-auto bg-orange-400 text-white py-2 px-4 rounded hover:bg-black cursor-pointer transition">
+                Contact Us
+              </button>
             </div>
-            <button className="mt-4 border border-gray-300 hover:border-black hover:bg-black hover:text-white transition py-2 px-4 rounded-full text-sm">
-              {plan.button}
-            </button>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

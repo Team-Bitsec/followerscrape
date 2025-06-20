@@ -1,109 +1,60 @@
-"use client";
-import React from "react";
-import SectionWrapper from "../ui/SectionWrapper";
+'use client';
 
 const plans = [
   {
-    name: "Axiom Starter",
-    price: "$15/month",
-    time: "5 hrs of monthly runtime",
-    features: [
-      "Cloud single-run limit: 1 hour",
-      "Email and community support",
-    ],
-    color: "orange",
+    name: 'Starter',
+    price: '$39',
+    compute: '$0.4 per compute unit',
+    support: 'Chat support',
+    discount: 'Bronze Apify Store discount 🟤',
+    color: 'border-gray-300',
   },
   {
-    name: "Axiom Pro",
-    price: "$50/month",
-    time: "30 hrs monthly runtime",
-    features: [
-      "Schedule bots: daily (cloud), every minute (desktop)",
-      "Zapier + Make integration",
-      "Webhooks & API",
-      "Cloud single-run limit: 2 hours",
-      "Email support",
-    ],
-    color: "orange",
+    name: 'Scale',
+    price: '$199',
+    compute: '$0.3 per compute unit',
+    support: 'Priority chat support',
+    discount: 'Silver Apify Store discount 🧊',
+    color: 'border-blue-400',
   },
   {
-    name: "Axiom Pro Max",
-    price: "$150/month",
-    time: "100 hrs monthly runtime",
-    features: [
-      "Schedule bots: hourly (cloud), every minute (desktop)",
-      "Run 2 bots simultaneously",
-      "Zapier + Make integration",
-      "Webhooks & API",
-      "Cloud single-run limit: 3 hours",
-      "Slack and email support",
-    ],
-    color: "orange",
-  },
-  {
-    name: "Axiom Ultimate",
-    price: "$250/month",
-    time: "250 hrs monthly Runtime",
-    features: [
-      "Schedule bots: 15 minutes (cloud), every minute (desktop)",
-      "Run 3 bots simultaneously",
-      "Zapier + Make integration",
-      "Webhooks & API",
-      "Cloud single-run limit: 12 hours",
-      "Priority Slack and email support",
-    ],
-    color: "purple",
+    name: 'Business',
+    price: '$999',
+    compute: '$0.25 per compute unit',
+    support: 'Account manager',
+    discount: 'Gold Apify Store discount 🟡',
+    color: 'border-yellow-400',
   },
 ];
 
 export default function Pricing() {
   return (
-    <>
-        <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {plans.map((plan, index) => (
+    <section className="bg-gray-100 py-12 px-4">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-10 text-gray-800">Choose Your Plan</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          {plans.map((plan) => (
             <div
-              key={index}
-              className="bg-white shadow-md rounded-xl p-6 border hover:shadow-xl transition"
+              key={plan.name}
+              className={`bg-white shadow-md rounded-lg p-6 border-t-4 ${plan.color} flex flex-col justify-between`}
             >
-              <h3
-                className={`text-lg font-semibold mb-2 text-${plan.color}-600`}
-              >
-                {plan.name}
-              </h3>
-              <p className="text-2xl font-bold mb-4">{plan.price}</p>
-              <p className="flex items-center mb-4">
-                <span className="mr-2">⏳</span>
-                {plan.time}
-              </p>
-              <ul className="mb-6 space-y-2 text-sm">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start">
-                    <span className="text-green-500 mr-2">✔</span>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <button
-                className={`w-full bg-${plan.color}-500 hover:bg-${plan.color}-600 text-white py-2 px-4 rounded transition`}
-              >
-                Get the extension
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{plan.name}</h3>
+                <p className="text-3xl font-bold text-gray-900">{plan.price}</p>
+                <p className="text-sm text-gray-500 mb-4">/ monthly & pay as you go</p>
+                <ul className="text-sm text-gray-700 space-y-2 mb-6 text-left">
+                  <li>✔ {plan.compute}</li>
+                  <li>✔ {plan.support}</li>
+                  <li>✔ {plan.discount}</li>
+                </ul>
+              </div>
+              <button className="mt-auto bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
+                Choose plan
               </button>
             </div>
           ))}
         </div>
       </div>
     </section>
-
-
-
-
-{/*------try another or yearly pricing tagsection*/}
-
-
-
-
-</>
   );
 }

@@ -2,16 +2,25 @@ import React from 'react'
 import HeroSection from './components/hero/HeroSection'
 
 
-import Pricing from './components/pricing/Pricing'
+
 import Extra from './components/hero/Extra'
+import Titlesection from './components/titlesection/Titlesection'
+import Clients from './components/clients/Clients'
+
+
 
 
 function page() {
   return (
     <div>
   <HeroSection></HeroSection>
-  <Pricing />
+
   <Extra />
+<Clients />
+<Titlesection />
+
+
+
     </div>
   )
 }

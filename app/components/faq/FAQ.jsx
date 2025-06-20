@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
+import { H1 } from './../ui/Typhography';
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -51,8 +52,11 @@ export default function FAQSection() {
   return (
     <section className="bg-gray-100 py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Frequently Asked Questions</h2>
-        <div className="space-y-6">
+        <div className="flex justify-center ">
+        <H1 className='text-center'>Freequently asked questions</H1>
+</div>
+
+        <div className="space-y-6 pt-4 mt-10">
           {faqs.map((faq, index) => (
             <div
               key={index}

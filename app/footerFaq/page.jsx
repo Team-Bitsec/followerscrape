@@ -1,14 +1,11 @@
 import React from 'react'
-import HeroSection from '../components/hero/HeroSection'
+import FAQSection from '../components/faq/FAQ'
 
 function page() {
   return (
     <div>
-
-<HeroSection />
-
-
-</div>
+        <FAQSection />
+    </div>
   )
 }
 

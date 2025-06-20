@@ -27,6 +27,11 @@ export default function Header() {
 
         {/* Right side: Auth Buttons */}
         <div className="hidden md:flex space-x-3 font-bold ">
+
+    <Link href="/signIn" className="hover:text-orange-300">SignIn</Link>
+          <Link href="/signUp" className="hover:text-orange-300">SignUp</Link>
+
+
         <Link href="/signIn" ><button className="px-4 py-1 border rounded-md hover:bg-gray-100 cursor-pointer">Signin</button></Link>
 
         
@@ -52,6 +57,7 @@ export default function Header() {
         <Link href="/home" className="block hover:text-orange-300">Home</Link>
           <Link href="/pricing" className="block hover:text-orange-300">Pricing</Link>
           <Link href="/contact" className="block hover:text-orange-300">Contact</Link>
+
           <button className="w-full mt-2 py-1 border rounded-md">Signin</button>
           <button className="w-full py-1 bg-black text-white rounded-md">Signup</button>
         </div>

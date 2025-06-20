@@ -1,6 +1,11 @@
 // components/Footer.tsx
 
 import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
+
+
+
+
 
 export default function Footer() {
   return (
@@ -22,19 +27,23 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-semibold mb-3">Quick Links</h2>
           <ul className="space-y-2 text-black">
-            <li><a href="#" className="hover:text-orange-300">Home</a></li>
-            <li><a href="#" className="hover:text-orange-300">Services</a></li>
-            <li><a href="#" className="hover:text-orange-300">Blog</a></li>
-            <li><a href="#" className="hover:text-orange-300">Contact</a></li>
+          
+
+          <Link href="/privacypolicy" className="block hover:text-orange-300">Privacy policy</Link>
+          <Link href="/footerFaq" className="block hover:text-orange-300">Freequently Asked Questions</Link>
+          <Link href="/terms" className="block hover:text-orange-300">Terms and Condition</Link>
+
+
+
           </ul>
         </div>
 
         {/* Contact Us */}
         <div>
           <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
-          <p className="text-black">Email: support@example.com</p>
+          <p className="text-black">Email: support@followerscrape.com</p>
           <p className="text-black">Phone: +880-1234-567890</p>
-          <p className="text-black mb-4">Address: Dhaka, Bangladesh</p>
+          <p className="text-black mb-4">Address: 123 Growth Street, New York, USA</p>
           <button className="bg-black hover:text-black font-bold hover:bg-orange-300 text-white px-5 py-2 rounded-md cursor-pointer" >
             Message Us
           </button>
