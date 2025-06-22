@@ -1,8 +1,7 @@
 // components/CTAButton.jsx
 
 export default function CTAButton({
-  text = "Click Me",
- 
+  text = "Get Started",
   onClick,
   bgColor = "bg-black",
   textColor = "text-white",

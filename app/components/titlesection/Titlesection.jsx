@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionWrapper from '../ui/SectionWrapper'
 import { Button, H1 } from '../ui/Typhography'
-import CTAButton from '../ui/CTAButton'
+
 
 
 

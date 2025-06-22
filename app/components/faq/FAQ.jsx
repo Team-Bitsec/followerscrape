@@ -46,7 +46,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="bg-gray-100 py-20 px-6">
+    <section className="bg-white py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-center ">
         <H1 className='text-center'>Freequently asked questions</H1>
@@ -62,7 +62,16 @@ export default function FAQSection() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <HelpCircle className="text-blue-500" />
-                  <h3 className="text-lg font-medium text-gray-800">{faq.question}</h3>
+
+                 <h3
+  className={`text-lg text-gray-800 ${
+    faq.question === 'Is this safe for my account?' ? 'font-bold' : 'font-medium'
+  }`}
+>
+  {faq.question}
+</h3>
+
+
                 </div>
                 {openIndex === index ? (
                   <ChevronUp className="text-gray-500" />

@@ -66,7 +66,7 @@ export default function Pricing() {
                 </ul>
               </div>
               <button className="mt-auto bg-orange-400 text-white py-2 px-4 rounded hover:bg-black cursor-pointer transition">
-                Contact Us
+          Buy Now
               </button>
             </div>
           ))}

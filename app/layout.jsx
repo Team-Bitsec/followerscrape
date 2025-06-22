@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "followerscrape",
   description: "this is lead genaration website",
+    icons: {
+    icon: "/favicon.ico",
+  },
 
 };
 

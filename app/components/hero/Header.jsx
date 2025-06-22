@@ -60,11 +60,6 @@ export default function Header() {
 
         &nbsp;      &nbsp;
          <Link href="/signUP"><button className="px-4 py-2 bg-black text-white rounded-md hover:bg-orange-300 hover:text-black cursor-pointer">Signup</button></Link>
-
-
-
-
-        
         </div>
       )}
     </nav>

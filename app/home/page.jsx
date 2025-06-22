@@ -6,8 +6,6 @@ function page() {
     <div>
 
 <HeroSection />
-
-
 </div>
   )
 }

@@ -5,8 +5,8 @@ import Image from "next/image";
 import { H1, Paragraph, H6 } from './../ui/Typhography';
 import FAQSection from '../faq/FAQ';
 import Rivew from '../riview/Riview'
-
-
+import Extra from './Extra'
+import Client from '../clients/Clients'
 
 
 
@@ -102,9 +102,14 @@ Proceed with our secure and hassle-free payment process to confirm your order
 
 </SectionWrapper>
 
-<FAQSection></FAQSection>
+<Extra ></Extra>
+
+<Client ></Client>
 <Rivew />
 
+
+
+<FAQSection></FAQSection>
 
 
 

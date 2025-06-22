@@ -77,9 +77,9 @@ export default function TestimonialCarousel() {
   const visibleTestimonials = getVisibleTestimonials();
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-12 text-center">
-  
-  <div className="flex justify-center pt-12 pb-14">
+    <div className="bg-gray-100 pt-16 pb-18">
+    <div className="w-full max-w-6xl mx-auto px-4 text-center ">
+  <div className="flex justify-center pt-2 pb-14">
         <H1 className='text-center '>what our client say</H1>
 </div>
       <div className="relative ">
@@ -121,6 +121,7 @@ export default function TestimonialCarousel() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
