@@ -1,77 +1,134 @@
+
 'use client';
-import { H1, H6 } from './../ui/Typhography';
+
+import { Check } from 'lucide-react';
+import { H1 } from '../ui/Typhography';
+import SectionWrapper from '../ui/SectionWrapper';
+import { H6 } from './../ui/Typhography';
+
+
 
 const plans = [
   {
-    name: 'Starter',
+    title: 'Starter Plan',
     price: '$30',
-    credits: '10,000 followers or 1,000 emails',
-    costPer: '$0.035 per credit',
+    button: 'Get started for starter plan',
     features: [
+      '$0.035 per credit',
+      '10,000 followers or 1,000 emails',
       'Pay only for valid emails',
       'Credits never expire',
-      'Access to all key features',
+      ' Access to all key features',
+
     ],
-    color: 'border-gray-300',
   },
   {
-    name: 'Pro',
+    title: 'Pro Plan',
     price: '$250',
-    credits: '100,000 followers or 10,000 emails',
-    costPer: '$0.03 per credit',
+    tag: 'Popular',
+    button: 'Get started with Pro',
     features: [
+
+       '$0.03 per credit',
+      '10,000 followers or 1,000 emails',
       'Same as Starter Plan',
-      'Lower cost per credit',
+      ' Lower cost per credit',
+      
+
+
+     
     ],
-    color: 'border-gray-300',
+ 
+
+    highlighted: true,
+
+
+
   },
   {
-    name: 'Enterprise',
-    price: '$2,000',
-    credits: '1,000,000 followers or 100,000 emails',
-    costPer: '$0.02 per credit',
+    title: 'Enterprise Plan',
+    price: '$2000',
+    button: 'Get started with Enterprise Plan',
     features: [
-      'Ideal for large-scale operations',
-      'Lowest cost per credit',
-    ],
-    color: 'border-gray-300',
+      '$0.02 per credit',
+      '10,000 followers or 1,000 emails',
+      ' Ideal for large-scale operations',
+      ' Lowest cost per credit',
+    ]
   },
 ];
 
-export default function Pricing() {
+export default function Extra() {
+
   return (
-    <section className="bg-gray-100 py-16 px-4">
-      <div className="max-w-7xl mx-auto text-center pt-12 pb-12">
-       
+    <>
+ <SectionWrapper className='text-center'>
+  <H1 className='text-center'>Choose your plan</H1>
+  <H6>Find the perfect package for your growth. No hidden fees, no fake engagement – only real results!</H6>
 
-        <H1>Choose Your Plan</H1>
-      
-        <H6> Find the perfect package for your growth. No hidden fees, no fake engagement – only real results!</H6>
-        <div className="grid gap-6 md:grid-cols-3 mt-14 ">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`bg-white pb-14 shadow-md rounded-lg p-6 border-t-4 ${plan.color} flex flex-col justify-between`}
-            >
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{plan.name} Plan</h3>
-                <p className="text-3xl font-bold text-gray-900">{plan.price}</p>
-                <p className="text-sm text-gray-500 mt-1 mb-3">{plan.credits}</p>
-                <p className="text-sm font-medium text-black mb-4">{plan.costPer}</p>
 
-                <ul className="text-sm text-gray-700 space-y-2 mb-6 text-left">
-                  {plan.features.map((feature, index) => (
-                    <li key={index}>✔ {feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <button className="mt-auto bg-orange-400 text-white py-2 px-4 rounded hover:bg-black cursor-pointer transition">
-          Buy Now
-              </button>
-            </div>
-          ))}
+
+ </SectionWrapper>
+    <section className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+   
+      {plans.map((plan, index) => (
+        <div
+          key={index}
+          className={`rounded-2xl border p-6 shadow-sm h-[450px] transition hover:shadow-md pt-18 ${
+            plan.highlighted
+              ? 'border-gray-300 bg-gray-100'
+              : 'border-gray-200 bg-white'
+          }`}
+        >
+
+          <div className='flex justify-between '>
+          <h3 className="text-xl font-semibold">{plan.title}</h3> 
+   {plan.tag && (
+            <span className="inline-block mt-2 text-xs font-medium text-white bg-orange-500 px-2 py-1 rounded-full">
+              🔥 {plan.tag}
+            </span>
+          )}
+
+          </div>
+          
+          
+         
+
+          <div className="mt-2 text-3xl font-bold">
+            {plan.price}
+            {plan.price !== 'Free' && (
+              <span className="text-sm font-normal text-gray-500"> </span>
+            )}
+          </div>
+
+     
+
+          <button
+            className={`mt-4 w-full py-2 rounded-lg text-sm font-medium transition cursor-pointer ${
+              plan.highlighted
+                ? 'bg-black text-white hover:bg-gray-800 cursor-pointer'
+                : 'bg-gray-100 hover:bg-gray-200'
+            }`}
+          >
+            {plan.button}
+          </button>
+
+          <ul className="mt-6 space-y-2 text-sm text-gray-700 font-bold">
+            {plan.features.map((feature, i) => (
+              <li key={i} className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-black font-bold" />
+                {feature}
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      ))}
     </section>
+    </>
+
   );
+
 }
+
+
+

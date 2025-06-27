@@ -7,6 +7,7 @@ import FAQSection from '../faq/FAQ';
 import Rivew from '../riview/Riview'
 import Extra from './Extra'
 import Client from '../clients/Clients'
+import Features from '../features/Features';
 
 
 
@@ -32,9 +33,9 @@ function HeroSection() {
       <CTAButton />
 
         {/* Bottom Image */}
-      <div className="relative w-full max-w-2xl mx-auto aspect-[16/9] mt-8">
+      <div className="relative w-full max-w-3xl mx-auto aspect-[16/9] mt-8 ">
   <Image
-    src="/images/home/instagram-keyword.png"
+    src="/images/home/instagram-keyword.jpg"
     alt="Sample Table"
     fill
     className="object-contain rounded-lg"
@@ -56,7 +57,9 @@ function HeroSection() {
 
 <div className="text-center max-w-3xl mx-auto pt-18 ">
   <H1>How Followerscrape work?</H1>
- <H6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis reprehenderit eos consequuntur .</H6>
+ <H6>Start growing your social presence in just three easy steps.
+Identify your audience, extract valuable leads, and connect with people who truly matter.
+No guesswork, no cold outreach — just smarter, faster growth.</H6>
 </div>
 
 
@@ -72,27 +75,27 @@ function HeroSection() {
           {/* Step 1 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
-            <h4 className="font-bold mb-2 text-2xl">Select a package that suits your needs.</h4>
+            <h4 className="font-bold mb-2 text-2xl">Choose a package that fits your goals.</h4>
             <p className="text-gray-600">
-           Choose from a variety of flexible plans designed to meet your specific goals
+          Pick from flexible plans tailored to match your audience growth needs.
 </p>
           </div>
 
           {/* Step 2 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
-            <h4 className="font-bold mb-2 text-2xl">Complete the payment</h4>
+            <h4 className="font-bold mb-2 text-2xl"> Provide your LinkedIn details</h4>
             <p className="text-gray-600">
-Proceed with our secure and hassle-free payment process to confirm your order
+Provide your profile name, company page URL, and your target follower count.
             </p>
           </div>
 
           {/* Step 3 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
-            <h4 className="font-bold mb-2 text-2xl">Enter your username or profile link.</h4>
+            <h4 className="font-bold mb-2 text-2xl">Complete the payment</h4>
             <p className="text-gray-600">
-              Simply provide your social media username or profile link so we know where to deliver the service
+             Proceed through our secure and hassle-free checkout to confirm your order
             </p>
           </div>
        </div>
@@ -102,9 +105,13 @@ Proceed with our secure and hassle-free payment process to confirm your order
 
 </SectionWrapper>
 
-<Extra ></Extra>
+
+<Features />
 
 <Client ></Client>
+<Extra ></Extra>
+
+
 <Rivew />
 
 

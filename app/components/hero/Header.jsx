@@ -6,12 +6,11 @@ import Link from "next/link";
 
 
 
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 text-[18px] m-2 border-gray-300 border rounded">
+    <nav className="bg-white shadow-md sticky top-0 z-50 text-[18px] m-2 border-gray-300 border-double border rounded ">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center cursor-pointer">
         {/* Left: Logo */}
         <div className="text-xl font-bold">
@@ -20,9 +19,52 @@ export default function Header() {
              
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 ">
+
+
+
+
+
+
+
           <Link href="/" className="hover:text-orange-300">Home</Link>
-          <Link href="/pricing" className="hover:text-orange-300">Pricing</Link>
-          <Link href="/contact" className="hover:text-orange-300">Contact</Link>
+     
+               <Link
+  href="/pricing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block hover:text-orange-300  text-black font-bold capitalize "
+>
+  Pricing
+</Link>
+
+               <Link
+  href="/contact"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block hover:text-orange-300  text-black font-bold capitalize "
+>
+  Contact
+</Link>
+ 
+
+{/*--------------
+
+<Link href="/pricing" legacyBehavior>
+  <a target="_blank" rel="noopener noreferrer" className="block hover:text-orange-300">
+   Pricing
+  </a>
+</Link>
+
+
+<Link href="/contact" legacyBehavior>
+  <a target="_blank" rel="noopener noreferrer" className="block hover:text-orange-300">
+Contact
+  </a>
+</Link>
+
+-------------*/}
+
+
         </div>
 
         {/* Right side: Auth Buttons */}
@@ -30,11 +72,70 @@ export default function Header() {
 
 
 
-        <Link href="/signIn" ><button className="px-4 py-2 border rounded-md hover:bg-gray-100 cursor-pointer">Signin</button></Link>
+       
 
-        
-         <Link href="/signUP"><button className="px-4 py-2 bg-black text-white rounded-md hover:bg-orange-300 hover:text-black cursor-pointer">Signup</button></Link>
-        </div>
+{/*------------------
+<Link href="/signIn" legacyBehavior>
+  <a target="_blank" rel="noopener noreferrer" className="block hover:text-orange-300 bg-black text-white font-bold capitalize px-5 py-2 rounded">
+   Signin
+  </a>
+</Link>
+
+
+
+<Link href="/signUP" legacyBehavior>
+  <a target="_blank" rel="noopener noreferrer" className="block hover:text-orange-300 bg-black text-white font-bold capitalize px-5 py-2 rounded">
+   SignUp
+  </a>
+</Link>
+
+
+   <Link href="/signUP"><button className="px-4 py-2 bg-black text-white rounded-md hover:bg-orange-300 hover:text-black cursor-pointer">Signup</button></Link>
+
+*/}
+
+
+
+
+
+{/* Sign In */}
+<Link
+  href="/signIn"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block hover:text-orange-300 bg-black text-white font-bold capitalize px-5 py-2 rounded"
+>
+  SignIn
+</Link>
+
+{/* Sign Up */}
+<Link
+  href="/signUP"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block hover:text-orange-300 bg-black text-white font-bold capitalize px-5 py-2 rounded"
+>
+SignUp
+</Link>
+
+{/* Button Style Sign Up */}
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">

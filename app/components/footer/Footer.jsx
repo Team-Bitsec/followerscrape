@@ -1,6 +1,6 @@
 // components/Footer.tsx
 
-import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter,  } from 'react-icons/fa';
 import Link from 'next/link';
 
 
@@ -16,7 +16,8 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-semibold mb-3">About Us</h2>
           <p className="text-black mb-4">
-            We provide solutions for your web and mobile needs. Our mission is to deliver top-notch service with passion.
+         Followerscrape helps businesses extract followers from competitors' LinkedIn pages.
+It identifies warm leads to boost targeted outreach.
           </p>
           <button className="bg-black hover:bg-orange-300 text-white px-5 py-2 rounded-md hover:text-black font-bold cursor-pointer">
             Learn More
@@ -29,10 +30,25 @@ export default function Footer() {
           <ul className="space-y-2 text-black">
           
 
-          <Link href="/privacypolicy" className="block hover:text-orange-300">Privacy policy</Link>
-          <Link href="/footerFaq" className="block hover:text-orange-300">Freequently Asked Questions</Link>
-          <Link href="/terms" className="block hover:text-orange-300">Terms and Condition</Link>
+<Link href="/privacypolicy" legacyBehavior>
+  <a target="_blank" rel="noopener noreferrer" className="block hover:text-orange-300">
+    privacy policy
+  </a>
+</Link>
 
+
+<Link href="/footerFaq" legacyBehavior>
+  <a target="_blank" rel="noopener noreferrer" className="block hover:text-orange-300">
+   Freequently Asked Questions
+  </a>
+</Link>
+
+
+<Link href="/terms" legacyBehavior>
+  <a target="_blank" rel="noopener noreferrer" className="block hover:text-orange-300">
+    Terms and Condition
+  </a>
+</Link>
 
 
           </ul>
@@ -42,7 +58,7 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
           <p className="text-black">Email: support@followerscrape.com</p>
-          <p className="text-black">Phone: +880-1234-567890</p>
+      
           <p className="text-black mb-4">Address: 123 Growth Street, New York, USA</p>
           <button className="bg-black hover:text-black font-bold hover:bg-orange-300 text-white px-5 py-2 rounded-md cursor-pointer" >
             Message Us
@@ -54,10 +70,12 @@ export default function Footer() {
           <h2 className="text-xl font-semibold mb-3">Follow Us</h2>
           <p className="text-black mb-4">Stay connected through our social platforms:</p>
           <div className="flex space-x-4 text-2xl">
-            <a href="#" className="hover:text-blue-500"><FaFacebookF /></a>
-            <a href="#" className="hover:text-blue-400"><FaTwitter /></a>
-            <a href="#" className="hover:text-pink-500"><FaInstagram /></a>
-            <a href="#" className="hover:text-gray-300"><FaGithub /></a>
+            <a href="#" className="text-[#1877F2]"><FaFacebookF /></a>
+            
+            <a href="#" className='text-[#0A66C2]'><FaLinkedinIn /> </a>
+            <a href="#" className="text-[#1DA1F2]"><FaTwitter /></a>
+            <a href="#" className="text-pink-500"><FaInstagram /></a>
+           
           </div>
         </div>
       </div>

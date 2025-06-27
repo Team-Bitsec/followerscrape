@@ -6,49 +6,59 @@ import { H1 } from "../ui/Typhography";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Smith",
-    role: "Marketing Lead",
-    comment: "This product has transformed our workflow. Highly recommended!",
+    name: "Tariq Al-Mansoor",
+    role: "Head of Outreach",
+    comment: "Followerscrape helps us connect with exactly the people we want to reach. It’s now a core part of our outreach stack",
     rating: 5,
     image: "https://randomuser.me/api/portraits/women/1.jpg",
   },
   {
     id: 2,
-    name: "John Doe",
-    role: "Product Manager",
-    comment: "Amazing experience! Support team is very helpful.",
+    name: "Felix Johansson",
+    role: "Head of Sales",
+    comment: "With Followerscrape, we were able to identify and connect with our exact target audience on LinkedIn in minutes — not hours. Game-changer.",
     rating: 4,
     image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
+
+
   {
     id: 3,
-    name: "Emma Johnson",
-    role: "Designer",
-    comment: "Clean design and easy to use. My clients love it.",
+    name: "Sophie Laroche",
+    role: "Design",
+    comment: "We use Followerscrape in our B2B lead campaigns, and it’s now part of our daily workflow. Super easy setup, and the team replies quickly when needed.",
     rating: 5,
     image: "https://randomuser.me/api/portraits/women/3.jpg",
   },
+
+
+
   {
     id: 4,
-    name: "Michael Brown",
-    role: "Developer",
-    comment: "Great tool, boosted my productivity a lot!",
+    name: "Tereza Havel",
+    role: "CMO",
+    comment: "We run a startup and needed a way to scale fast. Followerscrape gave us the edge — no fluff, just results. It’s now part of every campaign we launch.",
     rating: 4,
     image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
+
+
+
   {
     id: 5,
-    name: "Olivia Davis",
-    role: "HR Manager",
-    comment: "We love how easy it is to manage everything.",
+    name: "Sophie Laroche",
+    role: "Growth Lead",
+    comment: "As a growth lead, I look for tools that save time and deliver results. Followerscrape does both. Our campaigns are cleaner, faster, and more profitable.",
     rating: 5,
     image: "https://randomuser.me/api/portraits/women/5.jpg",
   },
+
+
   {
     id: 6,
     name: "David Wilson",
     role: "CEO",
-    comment: "Best decision we made for our team.",
+    comment: "As an agency owner, finding real leads fast is everything. Followerscrape gave us exactly that — more reach, better targeting, and a noticeable jump in qualified inquiries.",
     rating: 5,
     image: "https://randomuser.me/api/portraits/men/6.jpg",
   },
