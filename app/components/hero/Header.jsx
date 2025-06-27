@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50 text-[18px] m-2 border-gray-300 border-double border rounded ">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center cursor-pointer">
+      <div className="container mx-auto px-1 py-3 flex justify-between items-center cursor-pointer">
         {/* Left: Logo */}
         <div className="text-xl font-bold">
        <img src="/images/logo/logo-png.png" alt="followerscraper" width="170px" height="150px"/>
@@ -26,7 +26,7 @@ export default function Header() {
 
 
 
-          <Link href="/" className="hover:text-orange-300">Home</Link>
+          <Link href="/" className="hover:text-orange-300 text-black font-bold">Home</Link>
      
                <Link
   href="/pricing"
