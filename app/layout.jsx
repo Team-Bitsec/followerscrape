@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "followerscrape",
+  title: "Followerscrape",
   description: "this is lead genaration website",
     icons: {
     icon: "/favicon.ico",
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
   {/* Favicon যুক্ত করলেম */}
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/images/logo/favicon.ico" />
      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased` }

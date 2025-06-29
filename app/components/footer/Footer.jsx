@@ -57,7 +57,7 @@ It identifies warm leads to boost targeted outreach.
         {/* Contact Us */}
         <div>
           <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
-          <p className="text-black">Email: support@followerscrape.com</p>
+          <p className="text-black">Email: info@followerscrape.com</p>
       
           <p className="text-black mb-4">Address: 123 Growth Street, New York, USA</p>
           <button className="bg-black hover:text-black font-bold hover:bg-orange-300 text-white px-5 py-2 rounded-md cursor-pointer" >
@@ -82,7 +82,7 @@ It identifies warm leads to boost targeted outreach.
 
       {/* Bottom */}
       <div className="border-t border-black mt-12 pt-6 text-center text-black">
-        © 2025 All rights reserved by <span className='font-bold'>Followerscrape</span>.
+        © 2025 All rights reserved by <span className='font-bold'>Followerscrape.com</span>
       </div>
     </footer>
   );

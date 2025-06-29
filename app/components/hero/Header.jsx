@@ -20,12 +20,6 @@ export default function Header() {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 ">
 
-
-
-
-
-
-
           <Link href="/" className="hover:text-orange-300 text-black font-bold">Home</Link>
      
                <Link
@@ -103,9 +97,9 @@ Contact
   href="/signIn"
   target="_blank"
   rel="noopener noreferrer"
-  className="block hover:text-orange-300 bg-black text-white font-bold capitalize px-5 py-2 rounded"
+  className="block hover:text-white hover:bg-orange-500 bg-black text-white font-bold capitalize px-5 py-2 rounded"
 >
-  SignIn
+  Sign In
 </Link>
 
 {/* Sign Up */}
@@ -113,9 +107,9 @@ Contact
   href="/signUP"
   target="_blank"
   rel="noopener noreferrer"
-  className="block hover:text-orange-300 bg-black text-white font-bold capitalize px-5 py-2 rounded"
+  className="block hover:text-white hover:bg-orange-500 bg-black text-white font-bold capitalize px-5 py-2 rounded"
 >
-SignUp
+Sign Up
 </Link>
 
 {/* Button Style Sign Up */}

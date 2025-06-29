@@ -7,7 +7,8 @@ const testimonials = [
   {
     id: 1,
     name: "Tariq Al-Mansoor",
-    role: "Head of Outreach",
+    role: "Head of Outreach-(NextBridge Tech)",
+
     comment: "Followerscrape helps us connect with exactly the people we want to reach. It’s now a core part of our outreach stack",
     rating: 5,
     image: "https://randomuser.me/api/portraits/women/1.jpg",
@@ -16,6 +17,7 @@ const testimonials = [
     id: 2,
     name: "Felix Johansson",
     role: "Head of Sales",
+
     comment: "With Followerscrape, we were able to identify and connect with our exact target audience on LinkedIn in minutes — not hours. Game-changer.",
     rating: 4,
     image: "https://randomuser.me/api/portraits/men/2.jpg",
@@ -126,7 +128,7 @@ export default function TestimonialCarousel() {
               <p className="text-sm italic mb-2">"{comment}"</p>
 
               <h3 className="text-lg font-semibold">{name}</h3>
-              <p className="text-gray-500 text-sm">{role}</p>
+              <p className="text-black text-sm">{role}</p>
             </div>
           ))}
         </div>

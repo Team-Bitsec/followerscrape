@@ -17,8 +17,8 @@ const plans = [
       '$0.035 per credit',
       '10,000 followers or 1,000 emails',
       'Pay only for valid emails',
-      'Credits never expire',
-      ' Access to all key features',
+      'Credits never expire & Access all features',
+
 
     ],
   },
@@ -30,7 +30,7 @@ const plans = [
     features: [
 
        '$0.03 per credit',
-      '10,000 followers or 1,000 emails',
+      '100,000 followers or 10,000 emails',
       'Same as Starter Plan',
       ' Lower cost per credit',
       
@@ -51,9 +51,9 @@ const plans = [
     button: 'Get started with Enterprise Plan',
     features: [
       '$0.02 per credit',
-      '10,000 followers or 1,000 emails',
+      '1,000,000 followers or 100,000 emails',
       ' Ideal for large-scale operations',
-      ' Lowest cost per credit',
+      '  offering the lowest cost per credit',
     ]
   },
 ];
@@ -81,19 +81,20 @@ export default function Extra() {
           }`}
         >
 
-          <div className='flex justify-between '>
+         
+         <div className='flex justify-between '>
           <h3 className="text-xl font-semibold">{plan.title}</h3> 
-   {plan.tag && (
-            <span className="inline-block mt-2 text-xs font-medium text-white bg-orange-500 px-2 py-1 rounded-full">
-              🔥 {plan.tag}
-            </span>
-          )}
+ 
+
+
+
 
           </div>
+       
           
-          
-         
+        
 
+        
           <div className="mt-2 text-3xl font-bold">
             {plan.price}
             {plan.price !== 'Free' && (
@@ -103,15 +104,9 @@ export default function Extra() {
 
      
 
-          <button
-            className={`mt-4 w-full py-2 rounded-lg text-sm font-medium transition cursor-pointer ${
-              plan.highlighted
-                ? 'bg-black text-white hover:bg-gray-800 cursor-pointer'
-                : 'bg-gray-100 hover:bg-gray-200'
-            }`}
-          >
-            {plan.button}
-          </button>
+  
+
+
 
           <ul className="mt-6 space-y-2 text-sm text-gray-700 font-bold">
             {plan.features.map((feature, i) => (
@@ -121,6 +116,28 @@ export default function Extra() {
               </li>
             ))}
           </ul>
+
+
+
+
+
+
+      <button
+            className={`mt-12 w-full py-2 rounded-lg text-sm font-medium transition cursor-pointer ${
+              plan.highlighted
+                ? 'bg-black text-white hover:bg-orange-400 cursor-pointer'
+                : 'bg-black hover:bg-orange-400 text-white '
+            }`}
+          >
+            {plan.button}
+          </button>
+
+
+
+
+
+
+
         </div>
       ))}
     </section>

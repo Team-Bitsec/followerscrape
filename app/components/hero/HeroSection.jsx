@@ -84,18 +84,21 @@ No guesswork, no cold outreach — just smarter, faster growth.</H6>
           {/* Step 2 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
-            <h4 className="font-bold mb-2 text-2xl"> Provide your LinkedIn details</h4>
+            <h4 className="font-bold mb-2 text-2xl"> 
+Complete the payment
+
+            </h4>
             <p className="text-gray-600">
-Provide your profile name, company page URL, and your target follower count.
+                    Proceed through our secure and hassle-free checkout to confirm your order
             </p>
           </div>
 
           {/* Step 3 */}
           <div className="relative pl-12">
             <div className="absolute -left-1 top-0 bg-orange-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
-            <h4 className="font-bold mb-2 text-2xl">Complete the payment</h4>
+            <h4 className="font-bold mb-2 text-2xl">Provide your LinkedIn details</h4>
             <p className="text-gray-600">
-             Proceed through our secure and hassle-free checkout to confirm your order
+            Provide your profile name, company page URL, and your target follower count.
             </p>
           </div>
        </div>

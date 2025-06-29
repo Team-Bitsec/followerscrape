@@ -6,8 +6,8 @@ export default function OurClients() {
   return (
     <SectionWrapper>
           <div className="max-w-3xl mx-auto px-4 text-center">
-             <H1 className="text-center">Our trasted clients</H1>
-             <H6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores qui doloremque quos similique perspiciatis, numquam, quaerat sed voluptate, praesentium reprehenderit possimus?</H6>
+             <H1 className="text-center">We gather real followers and data from trusted sources like</H1>
+    
              </div>
     <section className="py-12 bg-white">
 
