@@ -41,9 +41,9 @@ export default function Features() {
     <section className="py-16 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-sm text-orange-500 font-semibold uppercase">Our Best Feature</h2>
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2">Features to Elevate Your Operations</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2">Unlock Smarter Leads with AI-Powered Precision</h1>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Designed with the tools and technology your healthcare organization needs to enhance efficiency, improve patient outcomes, and ensure data security.
+       From competitor analysis to intelligent enrichment — discover a powerful lead generation system designed to fuel faster, more accurate outreach.
         </p>
       </div>
 
