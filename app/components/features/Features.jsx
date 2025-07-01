@@ -5,33 +5,33 @@ import { BarChart2, Database, UserPlus, ShieldCheck, Calendar, FileText, DollarS
 const features = [
   {
     icon: <BarChart2 className="w-6 h-6 text-white" />,
-    title: "Real-Time Analytics & Reporting",
-    description: "Gain actionable insights from health data to improve decision-making.",
+    title: "Competitor Follower Insights",
+    description: "Discover and extract followers from your competitors’ LinkedIn profiles to tap into pre-qualified, niche-specific audiences.",
   },
   {
     icon: <Database className="w-6 h-6 text-white" />,
-    title: "Centralized Patient Data Management",
-    description: "Seamlessly manage patient records in one secure location.",
+    title: "Tiered Email Enrichment",
+    description: "Improve your lead quality with a multi-layered email verification system that ensures higher accuracy and deliverability",
   },
   {
     icon: <UserPlus className="w-6 h-6 text-white" />,
-    title: "AI Tools for Workflow Automation",
-    description: "Empower patients with secure access to their health records.",
+    title: "Smart Catch-All Detection",
+    description: "Identify catch-all domains and test them intelligently to filter out risky or inactive emails before they reach your inbox",
   },
   {
     icon: <ShieldCheck className="w-6 h-6 text-white" />,
-    title: "Advanced Data Security & Compliance",
-    description: "Stay compliant with regulations and protect sensitive patient information.",
+    title: "AI-Driven Lead Qualification",
+    description: "Use machine learning to evaluate, score, and prioritize leads based on behavioral signals and relevance to your target market.",
   },
   {
     icon: <Calendar className="w-6 h-6 text-white" />,
-    title: "Intuitive Appointment Scheduling",
-    description: "Simplify patient scheduling with an easy-to-use, automated system.",
+    title: "Auto-Sync Integrations",
+    description: "Instantly connect with top outreach and enrichment tools like BetterEnrich, Clay, and Persana AI to keep your workflows seamless.",
   },
   {
     icon: <FileText className="w-6 h-6 text-white" />,
-    title: "Customizable Reporting Tools",
-    description: "Create detailed, custom reports tailored to your organization’s needs.",
+    title: "Real-Time Data Refresh",
+    description: "Keep your lead lists fresh with automatic syncing and periodic updates to prevent outdated contact data and lost opportunities.",
   },
 
 ];

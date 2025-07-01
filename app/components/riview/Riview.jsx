@@ -7,62 +7,69 @@ const testimonials = [
   {
     id: 1,
     name: "Tariq Al-Mansoor",
-    role: "Head of Outreach-(NextBridge Tech)",
+    role: "Head of Outreach",
+    company:'NextBridge Tech',
 
     comment: "Followerscrape helps us connect with exactly the people we want to reach. It’s now a core part of our outreach stack",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    image:'/images/riview/tarik al monsur.jpg'
   },
   {
     id: 2,
     name: "Felix Johansson",
     role: "Head of Sales",
+    company:'NordGrowth AB (Sweden)',
 
-    comment: "With Followerscrape, we were able to identify and connect with our exact target audience on LinkedIn in minutes — not hours. Game-changer.",
+    comment: "With Followerscrape, we were able to identify and connect with our exact target audience on LinkedIn in minutes — not hours. Game-changer",
     rating: 4,
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
+
+        image:'/images/riview/felix johanson.jpg'
   },
 
 
   {
     id: 3,
     name: "Sophie Laroche",
-    role: "Design",
-    comment: "We use Followerscrape in our B2B lead campaigns, and it’s now part of our daily workflow. Super easy setup, and the team replies quickly when needed.",
+    role: "Growth Lead",
+    company:'Paris',
+    comment: "We use Followerscrape in our B2B lead campaigns, and it’s now part of our daily workflow. Super easy setup, and the team replies quickly when needed",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
+  image:'/images/riview/Sophie Laroche.jpg'
   },
 
 
 
   {
     id: 4,
-    name: "Tereza Havel",
-    role: "CMO",
-    comment: "We run a startup and needed a way to scale fast. Followerscrape gave us the edge — no fluff, just results. It’s now part of every campaign we launch.",
+    name: "Giulia Romano",
+    role: "Founder",
+    company:'SocialUp Studio',
+    comment: "As an agency owner, finding real leads fast is everything. Followerscrape gave us exactly that — more reach, better targeting, and a noticeable jump in qualified inquiries.",
     rating: 4,
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+     image:'/images/riview/Giulia Romano,.jpg'
   },
 
 
 
   {
     id: 5,
-    name: "Sophie Laroche",
-    role: "Growth Lead",
-    comment: "As a growth lead, I look for tools that save time and deliver results. Followerscrape does both. Our campaigns are cleaner, faster, and more profitable.",
+    name: " Tereza Havel",
+    role: "CMO",
+    company:'StartupNest (Prague)',
+    comment: "We run a startup and needed a way to scale fast. Followerscrape gave us the edge — no fluff, just results. It’s now part of every campaign we launch",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
+image:'/images/riview/Tereza Havel,.jpg'
   },
 
 
   {
     id: 6,
-    name: "David Wilson",
-    role: "CEO",
-    comment: "As an agency owner, finding real leads fast is everything. Followerscrape gave us exactly that — more reach, better targeting, and a noticeable jump in qualified inquiries.",
+    name: "Sophie Müller",
+    role: "Marketing Specialist",
+    company:'Berlin Digital Lab (Germany)',
+    comment: "Followerscrape made it incredibly easy to target the right people on LinkedIn. It saved us hours of manual work every week.",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/men/6.jpg",
+ image:'/images/riview/Sophie Müller.jpg'
   },
 ];
 
@@ -111,7 +118,7 @@ export default function TestimonialCarousel() {
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {visibleTestimonials.map(({ id, name, role, comment, rating, image }) => (
+          {visibleTestimonials.map(({ id, name, role, comment, rating, image,company }) => (
             <div key={id} className="bg-white shadow-md rounded-lg p-6">
               <img
                 src={image}
@@ -128,7 +135,9 @@ export default function TestimonialCarousel() {
               <p className="text-sm italic mb-2">"{comment}"</p>
 
               <h3 className="text-lg font-semibold">{name}</h3>
+               
               <p className="text-black text-sm">{role}</p>
+                 <p className="text-black text-sm">{company}</p>
             </div>
           ))}
         </div>

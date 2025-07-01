@@ -34,12 +34,21 @@ function HeroSection() {
 
         {/* Bottom Image */}
       <div className="relative w-full max-w-3xl mx-auto aspect-[16/9] mt-8 ">
-  <Image
-    src="/images/home/instagram-keyword.jpg"
-    alt="Sample Table"
-    fill
-    className="object-contain rounded-lg"
-  />
+
+
+   <video
+          controls
+          className="w-full h-full rounded-lg shadow-lg"
+        >
+          <source src="/video/hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+
+
+
+
+
 </div>
 
       </div>
