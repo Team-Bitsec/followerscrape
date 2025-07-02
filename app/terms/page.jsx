@@ -31,7 +31,10 @@ import { H1 } from "../components/ui/Typhography";
 export default function Termspage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 text-gray-800">
-           <H1 className='text-center'>Terms and condition</H1>
+      <div className="text-center mt-9 mb-9">
+ <H1 className='text-center'>Terms and condition</H1>
+      </div>
+          
 
       <p className="mb-6">
         Welcome to <strong>followerscrape.com</strong> ("we," "our," "us"). These Terms and Conditions govern your use of our website (the "Website"). By accessing or using our Website, you agree to be bound by these terms. If you do not agree with any part of these Terms and Conditions, please do not use our Website.
@@ -90,7 +93,7 @@ export default function Termspage() {
       <p className="mb-4">
         If you have any questions regarding these Terms and Conditions, please contact us at:
       </p>
-      <p>Email: <span className="text-blue-600 underline">[your@email.com]</span></p>
+      <p>Email: <span className="text-blue-600 underline">[info@followerscrape.com]</span></p>
       <p>Website: <span className="text-blue-600 underline">https://followerscrape.com</span></p>
 
       <p className="mt-6 text-sm text-gray-500">

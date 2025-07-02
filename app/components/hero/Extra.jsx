@@ -47,7 +47,7 @@ const plans = [
   },
   {
     title: 'Enterprise Plan',
-    price: '$2000',
+    price: '$2,000',
     button: 'Get started with Enterprise Plan',
     features: [
       '$0.02 per credit',

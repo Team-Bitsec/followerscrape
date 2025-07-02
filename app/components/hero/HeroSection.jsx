@@ -26,7 +26,7 @@ function HeroSection() {
           LinkedIn page <span className="text-orange-500">followers</span>
         </h1>
         <p className="text-gray-700 text-lg md:text-xl mb-8">
-          ScrapeFollowers helps you find warm leads by scraping your
+      Followerscrape helps you find warm leads by scraping your
           Competitors' LinkedIn Company page followers at scale
         </p>
         

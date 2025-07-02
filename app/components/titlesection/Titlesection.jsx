@@ -16,7 +16,7 @@ sign up and get started.</H1>
 <div className='flex gap-5 mt-5 justify-center'>
 <Button className='mt-4'>Get a started</Button>
 
-<Button>Signup</Button>
+<Button>Sign Up</Button>
 </div>
 </SectionWrapper>
 

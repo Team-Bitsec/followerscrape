@@ -1,6 +1,7 @@
 
 
 import { BarChart2, Database, UserPlus, ShieldCheck, Calendar, FileText, DollarSign, Lock } from 'lucide-react';
+import { H1 } from '../ui/Typhography';
 
 const features = [
   {
@@ -40,11 +41,10 @@ export default function Features() {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-sm text-orange-500 font-semibold uppercase">Our Best Feature</h2>
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2">Unlock Smarter Leads with AI-Powered Precision</h1>
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-       From competitor analysis to intelligent enrichment — discover a powerful lead generation system designed to fuel faster, more accurate outreach.
-        </p>
+     
+  
+        <H1>our best Features</H1>
+      
       </div>
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">

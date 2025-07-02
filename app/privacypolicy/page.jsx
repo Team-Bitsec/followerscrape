@@ -1,7 +1,13 @@
+import { H1 } from "../components/ui/Typhography";
+
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Privacy Policy</h1>
+      <div className="text-center mt-9 mb-9">
+        <H1>Privacy  policy</H1>
+      </div>
+    
 
       <p className="mb-4 text-gray-700">
         Your privacy matters to us. Here’s how we protect your data:
