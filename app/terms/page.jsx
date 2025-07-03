@@ -93,8 +93,8 @@ export default function Termspage() {
       <p className="mb-4">
         If you have any questions regarding these Terms and Conditions, please contact us at:
       </p>
-      <p>Email: <span className="text-blue-600 underline">[info@followerscrape.com]</span></p>
-      <p>Website: <span className="text-blue-600 underline">https://followerscrape.com</span></p>
+      <p>Email: <span className="text-black font-bold "><a href="x" className="no-underline">info@followerscrape.com</a></span></p>
+      <p>Website: <span className="text-black font-bold "><a href="x">https://followerscrape.com </a></span></p>
 
       <p className="mt-6 text-sm text-gray-500">
         By using our Website, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.

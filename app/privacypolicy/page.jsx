@@ -14,10 +14,10 @@ export default function PrivacyPolicyPage() {
       </p>
 
       <ul className="list-disc list-inside space-y-3 text-gray-700">
-        <li>We do <strong>NOT</strong> store your passwords.</li>
-        <li>We collect only the necessary information for processing orders.</li>
-        <li>Payment details are securely processed via third-party payment gateways.</li>
-        <li>We do not sell or share your data with third parties.</li>
+        <li>We<strong> do not store your passwords.</strong></li>
+        <li>We only collect information necessary to process your order.</li>
+        <li><strong>Payments are handled securely</strong> via trusted third-party gateways.</li>
+        <li>We <strong>never sell or share</strong> your personal data.</li>
       </ul>
 
       <p className="mt-6 text-gray-700">

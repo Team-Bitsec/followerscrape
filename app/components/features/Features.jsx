@@ -6,8 +6,8 @@ import { H1 } from '../ui/Typhography';
 const features = [
   {
     icon: <BarChart2 className="w-6 h-6 text-white" />,
-    title: "Competitor Follower Insights",
-    description: "Discover and extract followers from your competitors’ LinkedIn profiles to tap into pre-qualified, niche-specific audiences.",
+    title: "Targeted Lead Generation",
+    description: "Focuses on individuals already interested in similar products or services, increasing the likelihood of engagemen",
   },
   {
     icon: <Database className="w-6 h-6 text-white" />,
