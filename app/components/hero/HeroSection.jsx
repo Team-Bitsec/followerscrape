@@ -36,11 +36,14 @@ function HeroSection() {
       <div className="relative w-full max-w-3xl mx-auto aspect-[16/9] mt-8 ">
 
 
-   <video
+   <video   autoPlay
+  loop
+  muted
+  playsInline
           controls
           className="w-full h-full rounded-lg shadow-lg"
         >
-          <source src="/video/hero.mp4" type="video/mp4" />
+          <source src="/video/Heroarea.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
