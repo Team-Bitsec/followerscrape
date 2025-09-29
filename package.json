@@ -1,26 +1,30 @@
 {
-  "name": "followerscrape",
-  "version": "0.1.0",
+  "name": "followerscrape-main",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "firebase": "^12.3.0",
-    "lucide-react": "^0.517.0",
-    "next": "^15.3.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0"
+    "next": "^14.2.33",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.3",
-    "tailwindcss": "^4"
-  }
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Bitsec/followerscrape.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Team-Bitsec/followerscrape/issues"
+  },
+  "homepage": "https://github.com/Team-Bitsec/followerscrape#readme",
+  "devDependencies": {}
 }
